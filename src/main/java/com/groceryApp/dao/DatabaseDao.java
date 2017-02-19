@@ -9,7 +9,7 @@ public class DatabaseDao {
 		Connection con = null;
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://grocerapp.c92wi7qbbarw.us-west-2.rds.amazonaws.com:3306/groceryDb", "surendra", "surendra");
+            con = DriverManager.getConnection("jdbc:mysql://hostname:3306/groceryDb", "username", "password");
 			return con;
 		}catch(Exception ex){
 			System.out.println(ex.getMessage());
